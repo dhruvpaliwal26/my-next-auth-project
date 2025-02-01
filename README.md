@@ -5,6 +5,8 @@ This is a simple authentication app using Next.js, NextAuth.js, Redux Toolkit fo
 ## Features
 
 - Login page with mock credentials (email/password).
+  - **Email**: `user@example.com`
+  - **Password**: `password`
 - Google login support.
 - Redux session management.
 - Dashboard to display user data after login.
@@ -22,7 +24,7 @@ This is a simple authentication app using Next.js, NextAuth.js, Redux Toolkit fo
 1.  Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/my-next-auth-project.git
+    git clone https://github.com/dhruvpaliwal26/my-next-auth-project.git
     ```
 
 2.  Navigate into the project folder:
@@ -38,13 +40,15 @@ This is a simple authentication app using Next.js, NextAuth.js, Redux Toolkit fo
     ```
 
 4.  Create a `.env.local` file in the root directory with the following content:
+
     ```bash
     NEXTAUTH_URL=http://localhost:3000
     NEXTAUTH_SECRET=your-secret-key
     GOOGLE_CLIENT_ID=your-google-client-id
     GOOGLE_CLIENT_SECRET=your-google-client-secret
+    ```
 
-        ```
+    - Replace `your-secret-key`, `your-google-client-id`, and `your-google-client-secret` with your actual values.
 
 5.  Run the development server:
 
@@ -53,6 +57,11 @@ This is a simple authentication app using Next.js, NextAuth.js, Redux Toolkit fo
     ```
 
 6.  Open `http://localhost:3000/login` in your browser to view the app.
+
+    - You can log in using:
+      - **Email**: `user@example.com`
+      - **Password**: `password`
+    - Or use **Google login** for authentication.
 
 ## License
 
